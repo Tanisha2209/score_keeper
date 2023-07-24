@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100&family=Satisfy&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <h1 id="start">Let the match begin!</h1>
+        <div class="names">Enter the names:
+            <input class="input is-primary is-rounded" type="text" placeholder="Player1 Name" id="p1name">
+            <input class="input is-info is-rounded" type="text" placeholder="Player2 Name" id="p2name">
+            <div class="submit">
+                <button id="submit" class="button is-primary is-rounded is-medium">Submit</button>
+            </div>
+        </div>     
+    </div>
+    <span class="overall">
+    <div class="match1">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third is-4 is-offset-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://plus.unsplash.com/premium_photo-1677543938193-6050960bef16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                        <p class="card-header-title">
+                            Badminton Score Keeper
+                        </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="names">
+                                <h1 class="title is-2"><span id="p1namedisplay">Player1</span> vs <span id="p2namedisplay">Player2</span></h1>
+                            </div>
+                            <div class="score">
+                                <h2 class="title is-3"><span id="p1display">0</span> vs <span id="p2display">0</span></h2>
+                            </div>
+                            <div class="text">
+                                Use the buttons below to keep score
+                            </div>
+                            <label for="winningScore" class="label is-large is-inline">Playing Upto</label>
+                            <div class="select is-rounded">
+                                <select name="winningScore" id="winningScore">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="p1button is-primary is-light button card-footer-item">+1 Player One</div>
+                            <div class="p2button is-info is-light button card-footer-item">+1 Player Two</div>
+                            <div class="reset is-danger is-light button card-footer-item">Reset</div>                   
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="match2">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third is-4 is-offset-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://plus.unsplash.com/premium_photo-1677543938193-6050960bef16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                        <p class="card-header-title">
+                            Badminton Score Keeper
+                        </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="names">
+                                <h1 class="title is-2"><span id="p1namedisplay">Player1</span> vs <span id="p2namedisplay">Player2</span></h1>
+                            </div>
+                            <div class="score">
+                                <h2 class="title is-3"><span id="p1display">0</span> vs <span id="p2display">0</span></h2>
+                            </div>
+                            <div class="text">
+                                Use the buttons below to keep score
+                            </div>
+                            <label for="winningScore" class="label is-large is-inline">Playing Upto</label>
+                            <div class="select is-rounded">
+                                <select name="winningScore" id="winningScore">
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="p1button is-primary is-light button card-footer-item">+1 Player One</div>
+                            <div class="p2button is-info is-light button card-footer-item">+1 Player Two</div>
+                            <div class="reset is-danger is-light button card-footer-item">Reset</div>                   
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="match3">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third is-4 is-offset-8">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://plus.unsplash.com/premium_photo-1677543938193-6050960bef16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                        <p class="card-header-title">
+                            Badminton Score Keeper
+                        </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="names">
+                                <h1 class="title is-2"><span id="p1namedisplay">Player1</span> vs <span id="p2namedisplay">Player2</span></h1>
+                            </div>
+                            <div class="score">
+                                <h2 class="title is-3"><span id="p1display">0</span> vs <span id="p2display">0</span></h2>
+                            </div>
+                            <div class="text">
+                                Use the buttons below to keep score
+                            </div>
+                            <label for="winningScore" class="label is-large is-inline">Playing Upto</label>
+                            <div class="select is-rounded">
+                                <select name="winningScore" id="winningScore">
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="p1button is-primary is-light button card-footer-item">+1 Player One</div>
+                            <div class="p2button is-info is-light button card-footer-item">+1 Player Two</div>
+                            <div class="reset is-danger is-light button card-footer-item">Reset</div>                   
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</span>
+
+    <script src="app.js"></script>
+</body>
+</html>
